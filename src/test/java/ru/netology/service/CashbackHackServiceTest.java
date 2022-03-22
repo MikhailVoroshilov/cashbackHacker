@@ -29,4 +29,12 @@ public class CashbackHackServiceTest {
 
         assertEquals(actual, expected,"wrong bonus");
     }
+
+    @Test
+    public void shouldRemainBoundaryNotComment() {
+        int actual = service.remain(1000);
+        int expected = 0;
+
+        assertEquals(actual, expected,"wrong bonus");
+    }
 }
